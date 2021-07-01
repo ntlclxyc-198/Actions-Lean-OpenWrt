@@ -10,9 +10,9 @@ name: Build OpenWrt
 
 on:
 
- repository_dispatch:
+  repository_dispatch:
   workflow_dispatch:
-    inputs:
+     inputs:
       ssh:
         description: 'SSH connection to Actions'
         required: false
