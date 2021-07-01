@@ -9,14 +9,13 @@
 name: Build OpenWrt
 
 on:
-
-  repository_dispatch:
-  workflow_dispatch:
-     inputs:
-      ssh:
-        description: 'SSH connection to Actions'
-        required: false
-        default: 'false'
+  #repository_dispatch:
+  #workflow_dispatch:
+  #   inputs:
+  #    ssh:
+  #      description: 'SSH connection to Actions'
+  #      required: false
+  #      default: 'false'
 #  release:
 #    types: published
   push:
@@ -39,8 +38,8 @@ env:
   SSH_ACTIONS: true
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
-  UPLOAD_COWTRANSFER: true
-  UPLOAD_WETRANSFER: true
+  UPLOAD_COWTRANSFER: false
+  UPLOAD_WETRANSFER: false
   TZ: Asia/Shanghai
 
 jobs:
